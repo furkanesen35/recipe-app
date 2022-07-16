@@ -3,7 +3,15 @@ import NavbarStyle from "./Navbar.style"
 
 const Navbar = () => {
  return (
-  <div>Navbar</div>
+  <nav>
+   <div>
+    <i>{"<Clarusway/>"}</i>
+    <span>Recipe</span>
+   </div>
+   <div>
+    
+   </div>
+  </nav>
  )
 }
 
