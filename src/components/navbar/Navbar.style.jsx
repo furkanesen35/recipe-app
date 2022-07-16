@@ -18,6 +18,20 @@ export const Logo = styled(Link)`
  }
 `;
 export const Menu = styled(Flex)`
+ @media (max-width: ${({theme}) => theme.screens.lg}) {
+  flex-direction: column;
+  width: 100%;
+  max-height: ${({isOpen}) => isOpen ? "400px" : "0"};
+  overflow: hidden;
+ }
+`;
+export const Hamburger = styled.div`
+ display: none;
+ cursor: pointer;
+ color: ${({theme}) => theme.colors.mainColor};
+ @media (max-width: ${({theme}) => theme.screens.lg}) {
+  display: block;
+ }
 `;
 export const MenuLink = styled(Flex)`
  text-align: center;
@@ -31,5 +45,4 @@ export const MenuLink = styled(Flex)`
   font-weight: bold;
  }
 `;
-
 export default Nav;
