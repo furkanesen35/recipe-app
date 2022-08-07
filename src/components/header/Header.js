@@ -1,9 +1,11 @@
 import React from 'react'
-import style from "./style"
+import HeaderStyle, { HeaderContainer } from "./Header.style"
 
 const Header = () => {
  return (
-  <div>Header</div>
+  <HeaderContainer>
+   
+  </HeaderContainer>
  )
 }
 

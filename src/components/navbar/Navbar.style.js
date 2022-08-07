@@ -37,6 +37,7 @@ export const Menu = styled(Flex)`
   width: 100%;
   max-height: ${({isOpen})=> (isOpen ? "400px" : "0")};
   overflow: hidden;
+ } 
 `
 
 export const Hamburger = styled.div`
