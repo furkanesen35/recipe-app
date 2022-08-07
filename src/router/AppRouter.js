@@ -6,6 +6,7 @@ import Home from "../pages/home/Home"
 import Login from "../pages/login/Login"
 import About from "../pages/about/About"
 import PrivateRouter from "./PrivateRouter.jsx"
+import Detail from "../pages/detail/Detail.jsx"
 
 const AppRouter = () => {
  return (
@@ -17,6 +18,9 @@ const AppRouter = () => {
     <Route path='/login' element={<Login/>} />
     <Route path="/about" element={<PrivateRouter/>}>
      <Route path='' element={<About/>} />
+    </Route>
+    <Route path="detail" element={<PrivateRouter/>} >
+     <Route path="" element={<Detail/>} />
     </Route>
    </Routes>
   </BrowserRouter>
