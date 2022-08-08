@@ -30,21 +30,21 @@ export const ImgContainer = styled.div`
 `;
 
 export const HeaderContainer = styled(Flex)`
-  margin: 25px;
-  img {
-    width: 200px;
-  }
+ margin: 25px;
+ img {
+  width: 200px;
+ }
 `;
 
 export const IngContainer = styled.div`
-  width: 400px;
-  font-size: 1.4rem;
-  margin: 2rem;
+ width: 400px;
+ font-size: 1.4rem;
+ margin: 2rem;
 `;
 
 export const OtherPart = styled.div`
-  width: 400px;
-  text-align: right;
-  font-size: 1.8rem;
-  margin: 2rem;
+ width: 400px;
+ text-align: right;
+ font-size: 1.8rem;
+ margin: 2rem;
 `;
