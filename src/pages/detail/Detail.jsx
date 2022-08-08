@@ -47,7 +47,11 @@ const Detail = () => {
      <img src={state.image || defaultImage} alt={state.label} />
     </ImgContainer>
     <IngContainer>
-     
+     {state.ingredientLines.map((line,index) => (
+       <div>
+        <p>{index + 1} - {line} </p>
+       </div>
+      ))}
     </IngContainer>
    </DetailPart>
   </DetailContainer>
