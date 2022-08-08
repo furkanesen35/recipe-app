@@ -34,6 +34,15 @@ const Home = () => {
  return (
   <div>
    <Header setQuery={setQuery} setSelectedMeal={setSelectedMeal} mealType={mealType} getData={getData} />
+   {!recipes && (
+    <ImgDiv>
+     <HomeImg src={homeSvg} />
+    </ImgDiv>
+   )}
+   {recipes?.length === 0 && (
+    <HeaderText>The Food cannot be found</HeaderText>
+   )}
+   {recipes?.length > 0 && <Cards recipes={recipes} />}
   </div>
  );
 };
